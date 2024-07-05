@@ -274,10 +274,6 @@ begin
     dbg_rx5_tready <= rx_dbg5_out.tready;
 
     top_common_inst : entity work.top_common
-    generic map (
-      REV_MAJOR => 0,
-      REV_MINOR => 5
-    )
     port map (
       clk_i => clk,
       lock_i => lock_i,
