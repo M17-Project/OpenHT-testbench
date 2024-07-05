@@ -1,0 +1,16 @@
+verilog xil_defaultlib --include "/opt/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/ec67/hdl" --include "../../../../OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/d47c/hdl" --include "../../../../OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/434f/hdl" --include "../../../../OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/814a/hdl/verilog" --include "../../../../OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/1017/hdl/verilog" --include "../../../../OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/8745/hdl/verilog" --include "../../../../OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/2340/hdl/verilog" \
+"../../../bd/testbench/ip/testbench_processing_system7_0_0/sim/testbench_processing_system7_0_0.v" \
+"../../../bd/testbench/ip/testbench_xbar_0/sim/testbench_xbar_0.v" \
+"../../../bd/testbench/ip/testbench_auto_pc_0/sim/testbench_auto_pc_0.v" \
+"../../../bd/testbench/ip/testbench_xlconstant_0_0/sim/testbench_xlconstant_0_0.v" \
+"../../../bd/testbench/ip/testbench_axis_data_fifo_1_0/sim/testbench_axis_data_fifo_1_0.v" \
+"../../../bd/testbench/ip/testbench_axis_data_fifo_0_0/sim/testbench_axis_data_fifo_0_0.v" \
+"../../../bd/testbench/ip/testbench_system_ila_0_0/bd_0/ip/ip_1/bd_a2a3_g_inst_0_gigantic_mux.v" \
+"../../../bd/testbench/ip/testbench_system_ila_0_0/bd_0/ip/ip_1/sim/bd_a2a3_g_inst_0.v" \
+"../../../bd/testbench/ip/testbench_system_ila_1_0/bd_0/ip/ip_1/bd_62f2_g_inst_0_gigantic_mux.v" \
+"../../../bd/testbench/ip/testbench_system_ila_1_0/bd_0/ip/ip_1/sim/bd_62f2_g_inst_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

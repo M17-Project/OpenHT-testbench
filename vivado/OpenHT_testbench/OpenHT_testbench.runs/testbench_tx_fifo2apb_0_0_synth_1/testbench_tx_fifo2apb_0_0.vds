@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Fri Jul  5 15:25:07 2024
+# Process ID: 6224
+# Current directory: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_tx_fifo2apb_0_0_synth_1
+# Command line: vivado -log testbench_tx_fifo2apb_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_tx_fifo2apb_0_0.tcl
+# Log file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_tx_fifo2apb_0_0_synth_1/testbench_tx_fifo2apb_0_0.vds
+# Journal file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_tx_fifo2apb_0_0_synth_1/vivado.jou
+# Running On        :localhost.localdomain
+# Platform          :unknown
+# Operating System  :unknown
+# Processor Detail  :Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+# CPU Frequency     :2303.998 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :10159 MB
+# Swap memory       :5281 MB
+# Total Virtual     :15441 MB
+# Available Virtual :11639 MB
+#-----------------------------------------------------------
+source testbench_tx_fifo2apb_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1558.309 ; gain = 5.961 ; free physical = 4534 ; free virtual = 9978
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/mdiepart/vivado_projects/OpenHT-testbench/tb_src'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top testbench_tx_fifo2apb_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6433
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2345.367 ; gain = 411.746 ; free physical = 2604 ; free virtual = 8058
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'testbench_tx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_tx_fifo2apb_0_0/synth/testbench_tx_fifo2apb_0_0.vhd:77]
+INFO: [Synth 8-3491] module 'tx_fifo2apb' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/top_src/tx_fifo2apb.vhd:14' bound to instance 'U0' of component 'tx_fifo2apb' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_tx_fifo2apb_0_0/synth/testbench_tx_fifo2apb_0_0.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'tx_fifo2apb' [/home/mdiepart/vivado_projects/OpenHT-testbench/top_src/tx_fifo2apb.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'tx_fifo2apb' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/top_src/tx_fifo2apb.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'testbench_tx_fifo2apb_0_0' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_tx_fifo2apb_0_0/synth/testbench_tx_fifo2apb_0_0.vhd:77]
+WARNING: [Synth 8-3848] Net s_apb_pslverr in module/entity tx_fifo2apb does not have driver. [/home/mdiepart/vivado_projects/OpenHT-testbench/top_src/tx_fifo2apb.vhd:23]
+WARNING: [Synth 8-7129] Port s_apb_pslverr[0] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[31] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[30] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[29] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[28] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[27] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[26] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[25] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[24] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[23] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[22] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[21] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[20] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[19] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[18] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[17] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[16] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[15] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[14] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[13] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[12] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[11] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[10] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[9] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[8] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[7] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[6] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[5] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[4] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[1] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[0] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pstrb[3] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pstrb[2] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pstrb[1] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pstrb[0] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[31] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[30] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[29] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[28] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[27] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[26] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[25] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[24] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[23] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[22] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[21] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[20] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[19] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[18] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[17] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[16] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[15] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[14] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[13] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[12] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[11] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[10] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[9] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[8] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[7] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[6] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[5] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[4] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[3] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[2] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[1] in module tx_fifo2apb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_pwdata[0] in module tx_fifo2apb is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2427.305 ; gain = 493.684 ; free physical = 2924 ; free virtual = 8406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2442.148 ; gain = 508.527 ; free physical = 2899 ; free virtual = 8381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2442.148 ; gain = 508.527 ; free physical = 2899 ; free virtual = 8381
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2442.148 ; gain = 0.000 ; free physical = 2899 ; free virtual = 8381
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.898 ; gain = 0.000 ; free physical = 2531 ; free virtual = 8241
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2549.898 ; gain = 0.000 ; free physical = 2527 ; free virtual = 8236
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 2169 ; free virtual = 7989
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 2169 ; free virtual = 7989
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 2169 ; free virtual = 7989
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 2122 ; free virtual = 7943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design testbench_tx_fifo2apb_0_0 has port s_apb_pready[0] driven by constant 1
+WARNING: [Synth 8-7129] Port s_apb_pslverr[0] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[31] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[30] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[29] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[28] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[27] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[26] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[25] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[24] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[23] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[22] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[21] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[20] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[19] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[18] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[17] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[16] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[15] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[14] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[13] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[12] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[11] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[10] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[9] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[8] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[7] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[6] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[5] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[4] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[1] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_apb_paddr[0] in module testbench_tx_fifo2apb_0_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 2080 ; free virtual = 7900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 1095 ; free virtual = 6950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 1093 ; free virtual = 6948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 1085 ; free virtual = 6940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 216 ; free virtual = 6101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 216 ; free virtual = 6101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 215 ; free virtual = 6101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 215 ; free virtual = 6100
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 214 ; free virtual = 6099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 214 ; free virtual = 6099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     1|
+|2     |LUT6 |    33|
+|3     |FDRE |    33|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2549.898 ; gain = 616.277 ; free physical = 213 ; free virtual = 6099
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 69 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2549.898 ; gain = 508.527 ; free physical = 162 ; free virtual = 6047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2549.906 ; gain = 616.277 ; free physical = 160 ; free virtual = 6046
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.906 ; gain = 0.000 ; free physical = 147 ; free virtual = 6032
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2549.906 ; gain = 0.000 ; free physical = 245 ; free virtual = 6137
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 78150790
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2549.906 ; gain = 971.785 ; free physical = 237 ; free virtual = 6130
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1738.609; main = 1394.723; forked = 348.234
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4210.270; main = 2549.902; forked = 1660.367
+INFO: [Common 17-1381] The checkpoint '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_tx_fifo2apb_0_0_synth_1/testbench_tx_fifo2apb_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file testbench_tx_fifo2apb_0_0_utilization_synth.rpt -pb testbench_tx_fifo2apb_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  5 15:26:04 2024...

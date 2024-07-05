@@ -1,0 +1,19 @@
+vhdl xil_defaultlib  \
+"../../../bd/testbench/ip/testbench_axi_gpio_0_0/sim/testbench_axi_gpio_0_0.vhd" \
+"../../../bd/testbench/ip/testbench_rst_cpu0_125M_0/sim/testbench_rst_cpu0_125M_0.vhd" \
+"../../../bd/testbench/ip/testbench_axi_apb_bridge_0_0/sim/testbench_axi_apb_bridge_0_0.vhd" \
+"../../../bd/testbench/ip/testbench_tx_axi_apb_bridge_0/sim/testbench_tx_axi_apb_bridge_0.vhd" \
+"../../../bd/testbench/ip/testbench_rx_fifo2apb_0_0/sim/testbench_rx_fifo2apb_0_0.vhd" \
+"../../../bd/testbench/ip/testbench_axi_apb_bridge_1_0/sim/testbench_axi_apb_bridge_1_0.vhd" \
+"../../../bd/testbench/ip/testbench_tx_fifo2apb_0_0/sim/testbench_tx_fifo2apb_0_0.vhd" \
+"../../../bd/testbench/ip/testbench_system_ila_0_0/bd_0/ip/ip_0/sim/bd_a2a3_ila_lib_0.vhd" \
+"../../../bd/testbench/ip/testbench_system_ila_0_0/bd_0/sim/bd_a2a3.vhd" \
+"../../../bd/testbench/ip/testbench_system_ila_0_0/sim/testbench_system_ila_0_0.vhd" \
+"../../../bd/testbench/ip/testbench_system_ila_1_0/bd_0/ip/ip_0/sim/bd_62f2_ila_lib_0.vhd" \
+"../../../bd/testbench/ip/testbench_system_ila_1_0/bd_0/sim/bd_62f2.vhd" \
+"../../../bd/testbench/ip/testbench_system_ila_1_0/sim/testbench_system_ila_1_0.vhd" \
+"../../../bd/testbench/ip/testbench_openht_wrapper_0_2/sim/testbench_openht_wrapper_0_2.vhd" \
+"../../../bd/testbench/sim/testbench.vhd" \
+
+# Do not sort compile order
+nosort

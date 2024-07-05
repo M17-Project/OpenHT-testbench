@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Fri Jul  5 15:25:00 2024
+# Process ID: 6114
+# Current directory: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_rx_fifo2apb_0_0_synth_1
+# Command line: vivado -log testbench_rx_fifo2apb_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_rx_fifo2apb_0_0.tcl
+# Log file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_rx_fifo2apb_0_0_synth_1/testbench_rx_fifo2apb_0_0.vds
+# Journal file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_rx_fifo2apb_0_0_synth_1/vivado.jou
+# Running On        :localhost.localdomain
+# Platform          :unknown
+# Operating System  :unknown
+# Processor Detail  :Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+# CPU Frequency     :2303.998 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :10159 MB
+# Swap memory       :5281 MB
+# Total Virtual     :15441 MB
+# Available Virtual :8498 MB
+#-----------------------------------------------------------
+source testbench_rx_fifo2apb_0_0.tcl -notrace

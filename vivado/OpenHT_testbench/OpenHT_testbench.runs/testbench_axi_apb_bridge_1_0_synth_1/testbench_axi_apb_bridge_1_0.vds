@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Fri Jul  5 15:25:02 2024
+# Process ID: 6167
+# Current directory: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1
+# Command line: vivado -log testbench_axi_apb_bridge_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_axi_apb_bridge_1_0.tcl
+# Log file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1/testbench_axi_apb_bridge_1_0.vds
+# Journal file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1/vivado.jou
+# Running On        :localhost.localdomain
+# Platform          :unknown
+# Operating System  :unknown
+# Processor Detail  :Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
+# CPU Frequency     :2303.998 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :10159 MB
+# Swap memory       :5281 MB
+# Total Virtual     :15441 MB
+# Available Virtual :9770 MB
+#-----------------------------------------------------------
+source testbench_axi_apb_bridge_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1559.203 ; gain = 66.375 ; free physical = 5128 ; free virtual = 10521
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/mdiepart/vivado_projects/OpenHT-testbench/tb_src'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: testbench_axi_apb_bridge_1_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry b5f97c3c85ca0b28 to dir: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.cache/ip/2024.1.1/b/5/b5f97c3c85ca0b28/testbench_axi_apb_bridge_1_0.dcp to /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1/testbench_axi_apb_bridge_1_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.cache/ip/2024.1.1/b/5/b5f97c3c85ca0b28/testbench_axi_apb_bridge_1_0_stub.v to /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1/testbench_axi_apb_bridge_1_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.cache/ip/2024.1.1/b/5/b5f97c3c85ca0b28/testbench_axi_apb_bridge_1_0_stub.vhdl to /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1/testbench_axi_apb_bridge_1_0_stub.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.cache/ip/2024.1.1/b/5/b5f97c3c85ca0b28/testbench_axi_apb_bridge_1_0_sim_netlist.v to /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1/testbench_axi_apb_bridge_1_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.cache/ip/2024.1.1/b/5/b5f97c3c85ca0b28/testbench_axi_apb_bridge_1_0_sim_netlist.vhdl to /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_1_0_synth_1/testbench_axi_apb_bridge_1_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP testbench_axi_apb_bridge_1_0, cache-ID = b5f97c3c85ca0b28.
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  5 15:25:16 2024...
