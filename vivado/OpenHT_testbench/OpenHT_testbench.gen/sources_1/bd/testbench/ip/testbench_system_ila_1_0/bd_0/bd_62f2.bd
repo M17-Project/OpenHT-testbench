@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x1A4B132257CD1D71",
+      "boundary_crc": "0x1A4B1322C3EEE8B4",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_62f2",
@@ -26,7 +26,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "1e+08",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -85,7 +85,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "1e+08",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -144,7 +144,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "1e+08",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -203,7 +203,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "1e+08",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -262,7 +262,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "1e+08",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -321,7 +321,7 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
+            "value": "1e+08",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -387,8 +387,8 @@
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
+            "value": "1e+08",
+            "value_src": "default_prop"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",

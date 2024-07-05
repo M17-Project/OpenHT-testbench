@@ -3,8 +3,8 @@
 # SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
 # IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
 # SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
-# Start of session at: Fri Jul  5 15:30:25 2024
-# Process ID: 7731
+# Start of session at: Fri Jul  5 16:01:35 2024
+# Process ID: 7606
 # Current directory: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1
 # Command line: vivado -log testbench_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_wrapper.tcl
 # Log file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/testbench_wrapper.vds
@@ -19,10 +19,10 @@
 # Host memory       :10159 MB
 # Swap memory       :5281 MB
 # Total Virtual     :15441 MB
-# Available Virtual :12608 MB
+# Available Virtual :12389 MB
 #-----------------------------------------------------------
 source testbench_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1619.648 ; gain = 0.023 ; free physical = 5326 ; free virtual = 11779
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1559.199 ; gain = 2.992 ; free physical = 6772 ; free virtual = 11502
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/mdiepart/vivado_projects/OpenHT-testbench/tb_src'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
@@ -38,19 +38,19 @@ INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7805
+INFO: [Synth 8-7075] Helper process launched with PID 7630
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2418.066 ; gain = 411.629 ; free physical = 4122 ; free virtual = 10575
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2417.906 ; gain = 409.660 ; free physical = 5510 ; free virtual = 10253
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'testbench_wrapper' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/hdl/testbench_wrapper.vhd:41]
 INFO: [Synth 8-3491] module 'testbench' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2076' bound to instance 'testbench_i' of component 'testbench' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/hdl/testbench_wrapper.vhd:68]
 INFO: [Synth 8-638] synthesizing module 'testbench' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2106]
-INFO: [Synth 8-3491] module 'testbench_axi_apb_bridge_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axi_apb_bridge_0_0_stub.vhdl:6' bound to instance 'axi_apb_bridge_0' of component 'testbench_axi_apb_bridge_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2784]
-INFO: [Synth 8-638] synthesizing module 'testbench_axi_apb_bridge_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axi_apb_bridge_0_0_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'testbench_axi_gpio_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'testbench_axi_gpio_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2818]
-INFO: [Synth 8-638] synthesizing module 'testbench_axi_gpio_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axi_gpio_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'testbench_processing_system7_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_processing_system7_0_0_stub.vhdl:6' bound to instance 'cpu0' of component 'testbench_processing_system7_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2842]
-INFO: [Synth 8-638] synthesizing module 'testbench_processing_system7_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_processing_system7_0_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'testbench_axi_apb_bridge_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axi_apb_bridge_0_0_stub.vhdl:6' bound to instance 'axi_apb_bridge_0' of component 'testbench_axi_apb_bridge_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2784]
+INFO: [Synth 8-638] synthesizing module 'testbench_axi_apb_bridge_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axi_apb_bridge_0_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'testbench_axi_gpio_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'testbench_axi_gpio_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2818]
+INFO: [Synth 8-638] synthesizing module 'testbench_axi_gpio_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axi_gpio_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'testbench_processing_system7_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_processing_system7_0_0_stub.vhdl:6' bound to instance 'cpu0' of component 'testbench_processing_system7_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2842]
+INFO: [Synth 8-638] synthesizing module 'testbench_processing_system7_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_processing_system7_0_0_stub.vhdl:77]
 INFO: [Synth 8-638] synthesizing module 'testbench_cpu0_axi_periph_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1362]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1DG51PM' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:58]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1DG51PM' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:58]
@@ -61,41 +61,41 @@ INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1J2VORF' (0#1) [/
 INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_4TM4HV' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:385]
 INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_4TM4HV' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:385]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_BOME9I' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:749]
-INFO: [Synth 8-3491] module 'testbench_auto_pc_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'testbench_auto_pc_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:932]
-INFO: [Synth 8-638] synthesizing module 'testbench_auto_pc_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_auto_pc_0_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'testbench_auto_pc_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'testbench_auto_pc_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:932]
+INFO: [Synth 8-638] synthesizing module 'testbench_auto_pc_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_auto_pc_0_stub.vhdl:71]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_BOME9I' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:749]
-INFO: [Synth 8-3491] module 'testbench_xbar_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'testbench_xbar_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1971]
-INFO: [Synth 8-638] synthesizing module 'testbench_xbar_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'testbench_xbar_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'testbench_xbar_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1971]
+INFO: [Synth 8-638] synthesizing module 'testbench_xbar_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_xbar_0_stub.vhdl:52]
 INFO: [Synth 8-256] done synthesizing module 'testbench_cpu0_axi_periph_0' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1362]
 INFO: [Synth 8-3491] module 'testbench_xlconstant_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_xlconstant_0_0/synth/testbench_xlconstant_0_0.v:53' bound to instance 'locked' of component 'testbench_xlconstant_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3037]
 INFO: [Synth 8-6157] synthesizing module 'testbench_xlconstant_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_xlconstant_0_0/synth/testbench_xlconstant_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'testbench_xlconstant_0_0' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_xlconstant_0_0/synth/testbench_xlconstant_0_0.v:53]
-INFO: [Synth 8-3491] module 'testbench_openht_wrapper_0_2' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_openht_wrapper_0_2_stub.vhdl:6' bound to instance 'openht_wrapper_0' of component 'testbench_openht_wrapper_0_2' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3041]
-INFO: [Synth 8-638] synthesizing module 'testbench_openht_wrapper_0_2' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_openht_wrapper_0_2_stub.vhdl:88]
-INFO: [Synth 8-3491] module 'testbench_rst_cpu0_125M_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_rst_cpu0_125M_0_stub.vhdl:6' bound to instance 'rst_cpu0_125M' of component 'testbench_rst_cpu0_125M_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3120]
-INFO: [Synth 8-638] synthesizing module 'testbench_rst_cpu0_125M_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_rst_cpu0_125M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'testbench_openht_wrapper_0_2' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_openht_wrapper_0_2_stub.vhdl:6' bound to instance 'openht_wrapper_0' of component 'testbench_openht_wrapper_0_2' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3041]
+INFO: [Synth 8-638] synthesizing module 'testbench_openht_wrapper_0_2' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_openht_wrapper_0_2_stub.vhdl:88]
+INFO: [Synth 8-3491] module 'testbench_rst_cpu0_125M_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_rst_cpu0_125M_0_stub.vhdl:6' bound to instance 'rst_cpu0_125M' of component 'testbench_rst_cpu0_125M_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3120]
+INFO: [Synth 8-638] synthesizing module 'testbench_rst_cpu0_125M_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_rst_cpu0_125M_0_stub.vhdl:22]
 INFO: [Synth 8-638] synthesizing module 'rx_driver_imp_H0RONB' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:478]
-INFO: [Synth 8-3491] module 'testbench_tx_axi_apb_bridge_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_tx_axi_apb_bridge_0_stub.vhdl:6' bound to instance 'rx_axi_apb_bridge' of component 'testbench_tx_axi_apb_bridge_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:612]
-INFO: [Synth 8-638] synthesizing module 'testbench_tx_axi_apb_bridge_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_tx_axi_apb_bridge_0_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'testbench_axis_data_fifo_1_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axis_data_fifo_1_0_stub.vhdl:6' bound to instance 'rx_axis_data_fifo' of component 'testbench_axis_data_fifo_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:646]
-INFO: [Synth 8-638] synthesizing module 'testbench_axis_data_fifo_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axis_data_fifo_1_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'testbench_rx_fifo2apb_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_rx_fifo2apb_0_0_stub.vhdl:6' bound to instance 'rx_fifo2apb_0' of component 'testbench_rx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:659]
-INFO: [Synth 8-638] synthesizing module 'testbench_rx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_rx_fifo2apb_0_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'testbench_tx_axi_apb_bridge_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_tx_axi_apb_bridge_0_stub.vhdl:6' bound to instance 'rx_axi_apb_bridge' of component 'testbench_tx_axi_apb_bridge_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:612]
+INFO: [Synth 8-638] synthesizing module 'testbench_tx_axi_apb_bridge_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_tx_axi_apb_bridge_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'testbench_axis_data_fifo_1_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axis_data_fifo_1_0_stub.vhdl:6' bound to instance 'rx_axis_data_fifo' of component 'testbench_axis_data_fifo_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:646]
+INFO: [Synth 8-638] synthesizing module 'testbench_axis_data_fifo_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axis_data_fifo_1_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'testbench_rx_fifo2apb_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_rx_fifo2apb_0_0_stub.vhdl:6' bound to instance 'rx_fifo2apb_0' of component 'testbench_rx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:659]
+INFO: [Synth 8-638] synthesizing module 'testbench_rx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_rx_fifo2apb_0_0_stub.vhdl:28]
 INFO: [Synth 8-256] done synthesizing module 'rx_driver_imp_H0RONB' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:478]
-INFO: [Synth 8-3491] module 'testbench_system_ila_1_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_system_ila_1_0_stub.vhdl:6' bound to instance 'rx_ila' of component 'testbench_system_ila_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3160]
-INFO: [Synth 8-638] synthesizing module 'testbench_system_ila_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_system_ila_1_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'testbench_system_ila_1_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_system_ila_1_0_stub.vhdl:6' bound to instance 'rx_ila' of component 'testbench_system_ila_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3160]
+INFO: [Synth 8-638] synthesizing module 'testbench_system_ila_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_system_ila_1_0_stub.vhdl:44]
 INFO: [Synth 8-638] synthesizing module 'tx_driver_imp_E6U29U' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1028]
-INFO: [Synth 8-3491] module 'testbench_axi_apb_bridge_1_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axi_apb_bridge_1_0_stub.vhdl:6' bound to instance 'tx_axi_apb_bridge' of component 'testbench_axi_apb_bridge_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1162]
-INFO: [Synth 8-638] synthesizing module 'testbench_axi_apb_bridge_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axi_apb_bridge_1_0_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'testbench_axis_data_fifo_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axis_data_fifo_0_0_stub.vhdl:6' bound to instance 'tx_axis_data_fifo' of component 'testbench_axis_data_fifo_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1196]
-INFO: [Synth 8-638] synthesizing module 'testbench_axis_data_fifo_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_axis_data_fifo_0_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'testbench_tx_fifo2apb_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_tx_fifo2apb_0_0_stub.vhdl:6' bound to instance 'tx_fifo2apb_0' of component 'testbench_tx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1209]
-INFO: [Synth 8-638] synthesizing module 'testbench_tx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_tx_fifo2apb_0_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'testbench_axi_apb_bridge_1_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axi_apb_bridge_1_0_stub.vhdl:6' bound to instance 'tx_axi_apb_bridge' of component 'testbench_axi_apb_bridge_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1162]
+INFO: [Synth 8-638] synthesizing module 'testbench_axi_apb_bridge_1_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axi_apb_bridge_1_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'testbench_axis_data_fifo_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axis_data_fifo_0_0_stub.vhdl:6' bound to instance 'tx_axis_data_fifo' of component 'testbench_axis_data_fifo_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1196]
+INFO: [Synth 8-638] synthesizing module 'testbench_axis_data_fifo_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_axis_data_fifo_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'testbench_tx_fifo2apb_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_tx_fifo2apb_0_0_stub.vhdl:6' bound to instance 'tx_fifo2apb_0' of component 'testbench_tx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1209]
+INFO: [Synth 8-638] synthesizing module 'testbench_tx_fifo2apb_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_tx_fifo2apb_0_0_stub.vhdl:28]
 INFO: [Synth 8-256] done synthesizing module 'tx_driver_imp_E6U29U' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:1028]
-INFO: [Synth 8-3491] module 'testbench_system_ila_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_system_ila_0_0_stub.vhdl:6' bound to instance 'tx_ila' of component 'testbench_system_ila_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3222]
-INFO: [Synth 8-638] synthesizing module 'testbench_system_ila_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7731-localhost.localdomain/realtime/testbench_system_ila_0_0_stub.vhdl:58]
+INFO: [Synth 8-3491] module 'testbench_system_ila_0_0' declared at '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_system_ila_0_0_stub.vhdl:6' bound to instance 'tx_ila' of component 'testbench_system_ila_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:3222]
+INFO: [Synth 8-638] synthesizing module 'testbench_system_ila_0_0' [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/.Xil/Vivado-7606-localhost.localdomain/realtime/testbench_system_ila_0_0_stub.vhdl:58]
 INFO: [Synth 8-256] done synthesizing module 'testbench' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/synth/testbench.vhd:2106]
 INFO: [Synth 8-256] done synthesizing module 'testbench_wrapper' (0#1) [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/hdl/testbench_wrapper.vhd:41]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_BOME9I is either unconnected or has no load
@@ -127,18 +127,18 @@ WARNING: [Synth 8-7129] Port M03_ARESETN in module testbench_cpu0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port S00_ACLK in module testbench_cpu0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module testbench_cpu0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2520.035 ; gain = 513.598 ; free physical = 4031 ; free virtual = 10485
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2519.875 ; gain = 511.629 ; free physical = 5400 ; free virtual = 10146
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2534.879 ; gain = 528.441 ; free physical = 4017 ; free virtual = 10471
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2531.750 ; gain = 523.504 ; free physical = 5392 ; free virtual = 10138
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2534.879 ; gain = 528.441 ; free physical = 4017 ; free virtual = 10471
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2531.750 ; gain = 523.504 ; free physical = 5392 ; free virtual = 10138
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2538.879 ; gain = 0.000 ; free physical = 3998 ; free virtual = 10452
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2535.750 ; gain = 0.000 ; free physical = 5392 ; free virtual = 10138
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -157,14 +157,14 @@ Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_
 Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axi_apb_bridge_0_0/testbench_axi_apb_bridge_0_0/testbench_axi_apb_bridge_0_0_in_context.xdc] for cell 'testbench_i/axi_apb_bridge_0'
 Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_tx_axi_apb_bridge_0/testbench_tx_axi_apb_bridge_0/testbench_tx_axi_apb_bridge_0_in_context.xdc] for cell 'testbench_i/rx_driver/rx_axi_apb_bridge'
 Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_tx_axi_apb_bridge_0/testbench_tx_axi_apb_bridge_0/testbench_tx_axi_apb_bridge_0_in_context.xdc] for cell 'testbench_i/rx_driver/rx_axi_apb_bridge'
-Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axis_data_fifo_1_0/testbench_axis_data_fifo_1_0/testbench_axis_data_fifo_1_0_in_context.xdc] for cell 'testbench_i/rx_driver/rx_axis_data_fifo'
-Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axis_data_fifo_1_0/testbench_axis_data_fifo_1_0/testbench_axis_data_fifo_1_0_in_context.xdc] for cell 'testbench_i/rx_driver/rx_axis_data_fifo'
+Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axis_data_fifo_1_0/testbench_axis_data_fifo_1_0/testbench_axis_data_fifo_0_0_in_context.xdc] for cell 'testbench_i/rx_driver/rx_axis_data_fifo'
+Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axis_data_fifo_1_0/testbench_axis_data_fifo_1_0/testbench_axis_data_fifo_0_0_in_context.xdc] for cell 'testbench_i/rx_driver/rx_axis_data_fifo'
 Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_rx_fifo2apb_0_0/testbench_rx_fifo2apb_0_0/testbench_rx_fifo2apb_0_0_in_context.xdc] for cell 'testbench_i/rx_driver/rx_fifo2apb_0'
 Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_rx_fifo2apb_0_0/testbench_rx_fifo2apb_0_0/testbench_rx_fifo2apb_0_0_in_context.xdc] for cell 'testbench_i/rx_driver/rx_fifo2apb_0'
 Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axi_apb_bridge_1_0/testbench_axi_apb_bridge_1_0/testbench_axi_apb_bridge_1_0_in_context.xdc] for cell 'testbench_i/tx_driver/tx_axi_apb_bridge'
 Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axi_apb_bridge_1_0/testbench_axi_apb_bridge_1_0/testbench_axi_apb_bridge_1_0_in_context.xdc] for cell 'testbench_i/tx_driver/tx_axi_apb_bridge'
-Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axis_data_fifo_0_0/testbench_axis_data_fifo_0_0/testbench_axis_data_fifo_1_0_in_context.xdc] for cell 'testbench_i/tx_driver/tx_axis_data_fifo'
-Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axis_data_fifo_0_0/testbench_axis_data_fifo_0_0/testbench_axis_data_fifo_1_0_in_context.xdc] for cell 'testbench_i/tx_driver/tx_axis_data_fifo'
+Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axis_data_fifo_0_0/testbench_axis_data_fifo_0_0/testbench_axis_data_fifo_0_0_in_context.xdc] for cell 'testbench_i/tx_driver/tx_axis_data_fifo'
+Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axis_data_fifo_0_0/testbench_axis_data_fifo_0_0/testbench_axis_data_fifo_0_0_in_context.xdc] for cell 'testbench_i/tx_driver/tx_axis_data_fifo'
 Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_tx_fifo2apb_0_0/testbench_tx_fifo2apb_0_0/testbench_tx_fifo2apb_0_0_in_context.xdc] for cell 'testbench_i/tx_driver/tx_fifo2apb_0'
 Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_tx_fifo2apb_0_0/testbench_tx_fifo2apb_0_0/testbench_tx_fifo2apb_0_0_in_context.xdc] for cell 'testbench_i/tx_driver/tx_fifo2apb_0'
 Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_system_ila_0_0/testbench_system_ila_0_0/testbench_system_ila_0_0_in_context.xdc] for cell 'testbench_i/tx_ila'
@@ -179,20 +179,20 @@ Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_
 Finished Parsing XDC File [/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2637.895 ; gain = 0.000 ; free physical = 4004 ; free virtual = 10458
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2634.766 ; gain = 0.000 ; free physical = 5384 ; free virtual = 10129
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2637.895 ; gain = 0.000 ; free physical = 4004 ; free virtual = 10458
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2634.766 ; gain = 0.000 ; free physical = 5384 ; free virtual = 10129
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3994 ; free virtual = 10447
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5380 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3994 ; free virtual = 10447
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5380 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -476,20 +476,20 @@ Applied set_property KEEP_HIERARCHY = SOFT for testbench_i/tx_ila. (constraint f
 Applied set_property KEEP_HIERARCHY = SOFT for testbench_i/rx_ila. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for testbench_i/openht_wrapper_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3994 ; free virtual = 10448
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5380 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-6895] The reference checkpoint /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.srcs/utils_1/imports/synth_1/testbench_wrapper.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3990 ; free virtual = 10445
+Finished Doing Graph Differ : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5378 ; free virtual = 10125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3990 ; free virtual = 10445
+Finished Preparing Guide Design : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5378 ; free virtual = 10125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3990 ; free virtual = 10445
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5378 ; free virtual = 10125
 ---------------------------------------------------------------------------------
 
 
@@ -532,25 +532,25 @@ WARNING: [Synth 8-7129] Port M03_ARESETN in module testbench_cpu0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port S00_ACLK in module testbench_cpu0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module testbench_cpu0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3989 ; free virtual = 10448
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10127
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3988 ; free virtual = 10447
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3988 ; free virtual = 10447
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3988 ; free virtual = 10447
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -568,37 +568,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3987 ; free virtual = 10447
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3987 ; free virtual = 10447
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3987 ; free virtual = 10447
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3987 ; free virtual = 10447
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3987 ; free virtual = 10447
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3987 ; free virtual = 10447
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5375 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -646,16 +646,16 @@ Report Cell Usage:
 |15    |testbench_xbar_0_bbox                 |     1|
 +------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3987 ; free virtual = 10447
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5374 ; free virtual = 10126
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2637.895 ; gain = 528.441 ; free physical = 3987 ; free virtual = 10447
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2637.895 ; gain = 631.457 ; free physical = 3987 ; free virtual = 10447
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2634.766 ; gain = 523.504 ; free physical = 5374 ; free virtual = 10126
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2634.766 ; gain = 626.520 ; free physical = 5374 ; free virtual = 10126
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2637.895 ; gain = 0.000 ; free physical = 4207 ; free virtual = 10667
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2634.766 ; gain = 0.000 ; free physical = 5374 ; free virtual = 10126
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2637.895 ; gain = 0.000 ; free physical = 4292 ; free virtual = 10752
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2634.766 ; gain = 0.000 ; free physical = 5727 ; free virtual = 10479
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -663,10 +663,10 @@ Synth Design complete | Checksum: 5ea1d427
 INFO: [Common 17-83] Releasing license: Synthesis
 74 Infos, 40 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:34 . Memory (MB): peak = 2637.895 ; gain = 981.988 ; free physical = 4292 ; free virtual = 10752
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1994.358; main = 1644.206; forked = 399.085
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4266.250; main = 2605.883; forked = 1660.367
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 2634.766 ; gain = 975.020 ; free physical = 5727 ; free virtual = 10479
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2042.278; main = 1646.007; forked = 446.841
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4322.500; main = 2602.754; forked = 1719.746
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint '/home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/synth_1/testbench_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file testbench_wrapper_utilization_synth.rpt -pb testbench_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jul  5 15:31:14 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  5 16:02:15 2024...

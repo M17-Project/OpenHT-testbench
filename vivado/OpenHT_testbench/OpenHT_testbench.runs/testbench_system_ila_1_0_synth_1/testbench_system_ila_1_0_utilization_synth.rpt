@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.1 (lin64) Build 5094488 Fri Jun 14 08:57:50 MDT 2024
-| Date         : Fri Jul  5 15:28:03 2024
+| Date         : Fri Jul  5 15:59:32 2024
 | Host         : localhost.localdomain running 64-bit unknown
 | Command      : report_utilization -file testbench_system_ila_1_0_utilization_synth.rpt -pb testbench_system_ila_1_0_utilization_synth.pb
 | Design       : testbench_system_ila_1_0

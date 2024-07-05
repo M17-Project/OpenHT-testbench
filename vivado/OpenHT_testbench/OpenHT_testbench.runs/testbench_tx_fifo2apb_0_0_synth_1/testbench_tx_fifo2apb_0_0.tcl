@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "testbench_tx_fifo2apb_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/mref

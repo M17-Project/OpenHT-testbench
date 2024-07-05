@@ -52,35 +52,35 @@ architecture STRUCTURE of bd_62f2_wrapper is
     clk : in STD_LOGIC;
     resetn : in STD_LOGIC;
     SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    SLOT_0_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SLOT_0_AXIS_tlast : in STD_LOGIC;
-    SLOT_0_AXIS_tvalid : in STD_LOGIC;
     SLOT_0_AXIS_tready : in STD_LOGIC;
+    SLOT_0_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    SLOT_0_AXIS_tvalid : in STD_LOGIC;
     SLOT_1_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    SLOT_1_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SLOT_1_AXIS_tlast : in STD_LOGIC;
-    SLOT_1_AXIS_tvalid : in STD_LOGIC;
     SLOT_1_AXIS_tready : in STD_LOGIC;
+    SLOT_1_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    SLOT_1_AXIS_tvalid : in STD_LOGIC;
     SLOT_2_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    SLOT_2_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SLOT_2_AXIS_tlast : in STD_LOGIC;
-    SLOT_2_AXIS_tvalid : in STD_LOGIC;
     SLOT_2_AXIS_tready : in STD_LOGIC;
+    SLOT_2_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    SLOT_2_AXIS_tvalid : in STD_LOGIC;
     SLOT_3_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    SLOT_3_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SLOT_3_AXIS_tlast : in STD_LOGIC;
-    SLOT_3_AXIS_tvalid : in STD_LOGIC;
     SLOT_3_AXIS_tready : in STD_LOGIC;
+    SLOT_3_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    SLOT_3_AXIS_tvalid : in STD_LOGIC;
     SLOT_4_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    SLOT_4_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SLOT_4_AXIS_tlast : in STD_LOGIC;
-    SLOT_4_AXIS_tvalid : in STD_LOGIC;
     SLOT_4_AXIS_tready : in STD_LOGIC;
+    SLOT_4_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    SLOT_4_AXIS_tvalid : in STD_LOGIC;
     SLOT_5_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    SLOT_5_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SLOT_5_AXIS_tlast : in STD_LOGIC;
-    SLOT_5_AXIS_tvalid : in STD_LOGIC;
-    SLOT_5_AXIS_tready : in STD_LOGIC
+    SLOT_5_AXIS_tready : in STD_LOGIC;
+    SLOT_5_AXIS_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    SLOT_5_AXIS_tvalid : in STD_LOGIC
   );
   end component bd_62f2;
 begin

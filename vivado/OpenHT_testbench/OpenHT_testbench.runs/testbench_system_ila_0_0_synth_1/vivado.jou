@@ -3,8 +3,8 @@
 # SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
 # IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
 # SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
-# Start of session at: Fri Jul  5 15:25:28 2024
-# Process ID: 6429
+# Start of session at: Fri Jul  5 15:56:04 2024
+# Process ID: 6556
 # Current directory: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_system_ila_0_0_synth_1
 # Command line: vivado -log testbench_system_ila_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_system_ila_0_0.tcl
 # Log file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_system_ila_0_0_synth_1/testbench_system_ila_0_0.vds
@@ -19,6 +19,6 @@
 # Host memory       :10159 MB
 # Swap memory       :5281 MB
 # Total Virtual     :15441 MB
-# Available Virtual :9545 MB
+# Available Virtual :10258 MB
 #-----------------------------------------------------------
 source testbench_system_ila_0_0.tcl -notrace

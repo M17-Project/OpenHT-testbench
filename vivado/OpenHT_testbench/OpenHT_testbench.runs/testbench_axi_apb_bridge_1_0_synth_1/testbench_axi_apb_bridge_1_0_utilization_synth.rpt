@@ -1,10 +1,10 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.1 (lin64) Build 5094488 Fri Jun 14 08:57:50 MDT 2024
-| Date         : Fri Jul  5 15:24:57 2024
+| Date         : Fri Jul  5 15:54:14 2024
 | Host         : localhost.localdomain running 64-bit unknown
-| Command      : report_utilization -file testbench_axis_data_fifo_1_0_utilization_synth.rpt -pb testbench_axis_data_fifo_1_0_utilization_synth.pb
-| Design       : testbench_axis_data_fifo_1_0
+| Command      : report_utilization -file testbench_axi_apb_bridge_1_0_utilization_synth.rpt -pb testbench_axi_apb_bridge_1_0_utilization_synth.pb
+| Design       : testbench_axi_apb_bridge_1_0
 | Device       : xc7z020clg400-1
 | Speed File   : -1
 | Design State : Synthesized
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   71 |     0 |          0 |     53200 |  0.13 |
-|   LUT as Logic          |   71 |     0 |          0 |     53200 |  0.13 |
+| Slice LUTs*             |   97 |     0 |          0 |     53200 |  0.18 |
+|   LUT as Logic          |   97 |     0 |          0 |     53200 |  0.18 |
 |   LUT as Memory         |    0 |     0 |          0 |     17400 |  0.00 |
-| Slice Registers         |   77 |     0 |          0 |    106400 |  0.07 |
-|   Register as Flip Flop |   77 |     0 |          0 |    106400 |  0.07 |
+| Slice Registers         |  154 |     0 |          0 |    106400 |  0.14 |
+|   Register as Flip Flop |  154 |     0 |          0 |    106400 |  0.14 |
 |   Register as Latch     |    0 |     0 |          0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     13300 |  0.00 |
@@ -59,22 +59,21 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 8     |          Yes |         Set |            - |
-| 69    |          Yes |       Reset |            - |
+| 1     |          Yes |         Set |            - |
+| 153   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
 2. Memory
 ---------
 
-+-------------------+------+-------+------------+-----------+-------+
-|     Site Type     | Used | Fixed | Prohibited | Available | Util% |
-+-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |  0.5 |     0 |          0 |       140 |  0.36 |
-|   RAMB36/FIFO*    |    0 |     0 |          0 |       140 |  0.00 |
-|   RAMB18          |    1 |     0 |          0 |       280 |  0.36 |
-|     RAMB18E1 only |    1 |       |            |           |       |
-+-------------------+------+-------+------------+-----------+-------+
++----------------+------+-------+------------+-----------+-------+
+|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
++----------------+------+-------+------------+-----------+-------+
+| Block RAM Tile |    0 |     0 |          0 |       140 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |          0 |       140 |  0.00 |
+|   RAMB18       |    0 |     0 |          0 |       280 |  0.00 |
++----------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
@@ -150,16 +149,14 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   69 |        Flop & Latch |
-| LUT6     |   29 |                 LUT |
-| LUT4     |   25 |                 LUT |
-| LUT5     |   16 |                 LUT |
-| LUT2     |   13 |                 LUT |
-| FDSE     |    8 |        Flop & Latch |
-| LUT3     |    6 |                 LUT |
-| CARRY4   |    6 |          CarryLogic |
-| LUT1     |    3 |                 LUT |
-| RAMB18E1 |    1 |        Block Memory |
+| FDRE     |  153 |        Flop & Latch |
+| LUT5     |   41 |                 LUT |
+| LUT2     |   39 |                 LUT |
+| LUT3     |   38 |                 LUT |
+| LUT4     |   37 |                 LUT |
+| LUT6     |   14 |                 LUT |
+| LUT1     |    1 |                 LUT |
+| FDSE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 
 

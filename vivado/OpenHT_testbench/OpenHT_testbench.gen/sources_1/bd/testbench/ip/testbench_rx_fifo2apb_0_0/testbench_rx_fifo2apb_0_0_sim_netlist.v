@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.1 (lin64) Build 5094488 Fri Jun 14 08:57:50 MDT 2024
-// Date        : Fri Jul  5 15:25:55 2024
+// Date        : Fri Jul  5 15:57:06 2024
 // Host        : localhost.localdomain running 64-bit unknown
 // Command     : write_verilog -force -mode funcsim
 //               /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_rx_fifo2apb_0_0/testbench_rx_fifo2apb_0_0_sim_netlist.v
@@ -33,7 +33,7 @@ module testbench_rx_fifo2apb_0_0
     rx_axis_tdata,
     rx_axis_tvalid,
     rx_axis_tready);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF rx_axis, ASSOCIATED_RESET reset, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF rx_axis, ASSOCIATED_RESET reset, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input reset;
   (* x_interface_info = "xilinx.com:interface:apb:1.0 S_APB PADDR" *) input [31:0]s_apb_paddr;
   (* x_interface_info = "xilinx.com:interface:apb:1.0 S_APB PENABLE" *) input s_apb_penable;
@@ -46,7 +46,7 @@ module testbench_rx_fifo2apb_0_0
   (* x_interface_info = "xilinx.com:interface:apb:1.0 S_APB PWRITE" *) input s_apb_pwrite;
   input [31:0]wr_count;
   input [31:0]rd_count;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 rx_axis TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME rx_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]rx_axis_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 rx_axis TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME rx_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]rx_axis_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 rx_axis TVALID" *) output rx_axis_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 rx_axis TREADY" *) input rx_axis_tready;
 

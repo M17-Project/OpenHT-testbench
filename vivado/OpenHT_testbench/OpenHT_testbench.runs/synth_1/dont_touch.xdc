@@ -15,9 +15,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==testbench_a
 # IP: bd/testbench/ip/testbench_xbar_0/testbench_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==testbench_xbar_0 || ORIG_REF_NAME==testbench_xbar_0} -quiet] -quiet
 
-# IP: bd/testbench/ip/testbench_auto_pc_0/testbench_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==testbench_auto_pc_0 || ORIG_REF_NAME==testbench_auto_pc_0} -quiet] -quiet
-
 # IP: bd/testbench/ip/testbench_cpu0_axi_periph_0/testbench_cpu0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==testbench_cpu0_axi_periph_0 || ORIG_REF_NAME==testbench_cpu0_axi_periph_0} -quiet] -quiet
 
@@ -56,5 +53,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==testbench_s
 
 # IP: bd/testbench/ip/testbench_openht_wrapper_0_2/testbench_openht_wrapper_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==testbench_openht_wrapper_0_2 || ORIG_REF_NAME==testbench_openht_wrapper_0_2} -quiet] -quiet
+
+# IP: bd/testbench/ip/testbench_auto_pc_0/testbench_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==testbench_auto_pc_0 || ORIG_REF_NAME==testbench_auto_pc_0} -quiet] -quiet
 
 # XDC: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/testbench_ooc.xdc

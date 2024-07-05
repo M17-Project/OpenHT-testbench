@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.1 (lin64) Build 5094488 Fri Jun 14 08:57:50 MDT 2024
-// Date        : Fri Jul  5 15:22:23 2024
+// Date        : Fri Jul  5 15:54:14 2024
 // Host        : localhost.localdomain running 64-bit unknown
-// Command     : write_verilog -force -mode synth_stub -rename_top testbench_axi_apb_bridge_1_0 -prefix
-//               testbench_axi_apb_bridge_1_0_ testbench_axi_apb_bridge_1_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_axi_apb_bridge_1_0/testbench_axi_apb_bridge_1_0_stub.v
 // Design      : testbench_axi_apb_bridge_1_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

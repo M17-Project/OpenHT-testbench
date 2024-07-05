@@ -3,8 +3,8 @@
 # SW Build 5094488 on Fri Jun 14 08:57:50 MDT 2024
 # IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
 # SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
-# Start of session at: Fri Jul  5 15:23:52 2024
-# Process ID: 5546
+# Start of session at: Fri Jul  5 15:52:50 2024
+# Process ID: 5196
 # Current directory: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_0_0_synth_1
 # Command line: vivado -log testbench_axi_apb_bridge_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_axi_apb_bridge_0_0.tcl
 # Log file: /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.runs/testbench_axi_apb_bridge_0_0_synth_1/testbench_axi_apb_bridge_0_0.vds
@@ -19,6 +19,6 @@
 # Host memory       :10159 MB
 # Swap memory       :5281 MB
 # Total Virtual     :15441 MB
-# Available Virtual :9634 MB
+# Available Virtual :11885 MB
 #-----------------------------------------------------------
 source testbench_axi_apb_bridge_0_0.tcl -notrace

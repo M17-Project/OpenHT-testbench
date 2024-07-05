@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1.1 (lin64) Build 5094488 Fri Jun 14 08:57:50 MDT 2024
-// Date        : Fri Jul  5 15:27:43 2024
+// Date        : Fri Jul  5 15:56:40 2024
 // Host        : localhost.localdomain running 64-bit unknown
 // Command     : write_verilog -force -mode funcsim
 //               /home/mdiepart/vivado_projects/OpenHT-testbench/vivado/OpenHT_testbench/OpenHT_testbench.gen/sources_1/bd/testbench/ip/testbench_openht_wrapper_0_2/testbench_openht_wrapper_0_2_sim_netlist.v
@@ -93,7 +93,7 @@ module testbench_openht_wrapper_0_2
     dbg_rx5_tstrb,
     dbg_rx5_tvalid,
     dbg_rx5_tready);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF dbg_rx0:dbg_rx1:dbg_rx2:dbg_rx3:dbg_rx4:dbg_rx5:dbg_tx0:dbg_tx1:dbg_tx2:dbg_tx3:dbg_tx4:dbg_tx5:dbg_tx6:dbg_tx7:rx_axis:tx_axis, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF dbg_rx0:dbg_rx1:dbg_rx2:dbg_rx3:dbg_rx4:dbg_rx5:dbg_tx0:dbg_tx1:dbg_tx2:dbg_tx3:dbg_tx4:dbg_tx5:dbg_tx6:dbg_tx7:rx_axis:tx_axis, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
   input nrst;
   input lock_i;
   (* x_interface_info = "xilinx.com:interface:apb:1.0 S_APB PADDR" *) input [31:0]s_apb_paddr;
@@ -105,67 +105,67 @@ module testbench_openht_wrapper_0_2
   (* x_interface_info = "xilinx.com:interface:apb:1.0 S_APB PSTRB" *) input [3:0]s_apb_pstrb;
   (* x_interface_info = "xilinx.com:interface:apb:1.0 S_APB PWDATA" *) input [31:0]s_apb_pwdata;
   (* x_interface_info = "xilinx.com:interface:apb:1.0 S_APB PWRITE" *) input s_apb_pwrite;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 tx_axis TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME tx_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]tx_axis_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 tx_axis TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME tx_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]tx_axis_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 tx_axis TVALID" *) output tx_axis_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 tx_axis TREADY" *) input tx_axis_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 rx_axis TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME rx_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [31:0]rx_axis_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 rx_axis TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME rx_axis, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [31:0]rx_axis_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 rx_axis TVALID" *) input rx_axis_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 rx_axis TREADY" *) output rx_axis_tready;
   input [2:0]io_in;
   output [3:0]io_out;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx0 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx0_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx0 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx0_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx0 TSTRB" *) output [3:0]dbg_tx0_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx0 TVALID" *) output dbg_tx0_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx0 TREADY" *) output dbg_tx0_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx1 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx1, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx1_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx1 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx1, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx1_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx1 TSTRB" *) output [3:0]dbg_tx1_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx1 TVALID" *) output dbg_tx1_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx1 TREADY" *) output dbg_tx1_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx2 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx2, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx2_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx2 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx2, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx2_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx2 TSTRB" *) output [3:0]dbg_tx2_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx2 TVALID" *) output dbg_tx2_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx2 TREADY" *) output dbg_tx2_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx3 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx3, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx3_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx3 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx3, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx3_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx3 TSTRB" *) output [3:0]dbg_tx3_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx3 TVALID" *) output dbg_tx3_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx3 TREADY" *) output dbg_tx3_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx4 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx4, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx4_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx4 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx4, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx4_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx4 TSTRB" *) output [3:0]dbg_tx4_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx4 TVALID" *) output dbg_tx4_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx4 TREADY" *) output dbg_tx4_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx5 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx5, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx5_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx5 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx5, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx5_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx5 TSTRB" *) output [3:0]dbg_tx5_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx5 TVALID" *) output dbg_tx5_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx5 TREADY" *) output dbg_tx5_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx6 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx6, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx6_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx6 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx6, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx6_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx6 TSTRB" *) output [3:0]dbg_tx6_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx6 TVALID" *) output dbg_tx6_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx6 TREADY" *) output dbg_tx6_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx7 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx7, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx7_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx7 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_tx7, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_tx7_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx7 TSTRB" *) output [3:0]dbg_tx7_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx7 TVALID" *) output dbg_tx7_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_tx7 TREADY" *) output dbg_tx7_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx0 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx0_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx0 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx0_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx0 TSTRB" *) output [3:0]dbg_rx0_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx0 TVALID" *) output dbg_rx0_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx0 TREADY" *) output dbg_rx0_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx1 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx1, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx1_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx1 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx1, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx1_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx1 TSTRB" *) output [3:0]dbg_rx1_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx1 TVALID" *) output dbg_rx1_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx1 TREADY" *) output dbg_rx1_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx2 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx2, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx2_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx2 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx2, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx2_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx2 TSTRB" *) output [3:0]dbg_rx2_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx2 TVALID" *) output dbg_rx2_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx2 TREADY" *) output dbg_rx2_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx3 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx3, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx3_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx3 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx3, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx3_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx3 TSTRB" *) output [3:0]dbg_rx3_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx3 TVALID" *) output dbg_rx3_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx3 TREADY" *) output dbg_rx3_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx4 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx4, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx4_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx4 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx4, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx4_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx4 TSTRB" *) output [3:0]dbg_rx4_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx4 TVALID" *) output dbg_rx4_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx4 TREADY" *) output dbg_rx4_tready;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx5 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx5, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx5_tdata;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx5 TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_rx5, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1e+08, PHASE 0.0, CLK_DOMAIN testbench_processing_system7_0_0_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [31:0]dbg_rx5_tdata;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx5 TSTRB" *) output [3:0]dbg_rx5_tstrb;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx5 TVALID" *) output dbg_rx5_tvalid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 dbg_rx5 TREADY" *) output dbg_rx5_tready;
